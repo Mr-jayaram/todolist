@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Todo List</title>
+      <!-- bootstrap -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.css">
+      <!-- main css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <!-- calendar -->
+      <link rel="stylesheet" type="text/css" href="assets/css/calender/calender.css">
+   </head>
+   <body>
+      <header>
+         <div class="header-content basic-width mt-3">
+            <div class="header-area my-2 my-lg-2 ">
+               <div class="user-area">
+                  <div class="user-img">
+                  	 <img src="assets/img/user.png" class="user-img-logo">
+                  </div>
+                  <!-- <p>User</p> -->
+               </div>
+               <div class="option-area">
+                  <img src="assets/img/notification.png" class="notification-img">
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="mt-3 ">
+         <div class="dashboard-options basic-width">
+            <div class="row">
+               <h6>Datas</h6>
+               <div class="col-lg-3">
+                  <div class="task-info">
+                     <div class="task-info-data">
+                        <p class="content-title">Task Info</p>
+                        <div class="task-list">
+                           <div class="task-datas">
+                              <div class="task-name">
+                                 <p class="task-name-title">Buy watch</p>
+                              </div>
+                              <div class="task-status">
+                                 <input type="checkbox" name="">
+                              </div>
+                           </div>
+                           <div class="task-datas">
+                              <div class="task-name">
+                                 <p class="task-name-title">Take rest</p>
+                              </div>
+                              <div class="task-status">
+                                 <input type="checkbox" name="">
+                              </div>
+                           </div>
+                           <div class="task-datas">
+                              <div class="task-name">
+                                 <p class="task-name-title">Take Water</p>
+                              </div>
+                              <div class="task-status">
+                                 <input type="checkbox" name="">
+                              </div>
+                           </div>
+                           <div class="task-datas">
+                              <div class="task-name">
+                                 <p class="task-name-title">Bike wash</p>
+                              </div>
+                              <div class="task-status">
+                                 <input type="checkbox" name="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="task-chart">
+                     <div class="task-chart-data">
+                        <h6 class="content-title">Task Chart</h6>
+                        <div id="chart"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="calander-content">
+                     <h6>Task Date</h6>
+                     <div id="calendar"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="create-task basic-width mt-2">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div>
+                     <h6>Create Task</h6>
+                     <div class="create-task-content">
+                     	 <form>
+                     	 <div class="row">
+                     	 	 <div class="form-floating mb-3 col-md-6">
+							  <input type="text" class="form-control" id="task_title" placeholder="name@example.com">
+							  <label for="task_title">Task Title</label>
+							</div>
+							<div class="form-floating mb-3 col-md-6">
+							  <input type="date" class="form-control" id="task_date">
+							  <label for="task_date">Date</label>
+							</div>
+
+							<div class="form-floating mb-3 col-md-12">
+							  <textarea class="form-control" cols="100" rows="4" id="task_details" placeholder="Task Details"></textarea>
+							  <label for="floatingPassword">Task Details</label>
+							</div>
+							<div class="col-md-12 ">
+								<input type="button" value="Add Task" class="form-control btn-success">
+							</div>
+                     	 </div>
+                     </form> 
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="create-task-list">
+                      <h6>Task List</h6>
+                      <div class="task-list-details task-bg-1">
+                      	  <div class="task-details-content ">
+                      	  	 <h5>Buy Water</h5>
+                      	  	 <p>i want to the buy water</p> 
+                      	  </div>
+                      	  <div class="task-date">
+                      	  	 <p>20-09-2024</p>
+                      	  	 <p class="m-0">done</p>
+                      	  </div>
+                      </div>
+                      <div class="task-list-details task-bg-2">
+                      	  <div class="task-details-content ">
+                      	  	 <h5>Buy Water</h5>
+                      	  	 <p>i want to the buy water</p> 
+                      	  </div>
+                      	  <div class="task-date">
+                      	  	 <p>20-09-2024</p>
+                      	  	 <p class="m-0">done</p>
+                      	  </div>
+                      </div>
+                      <div class="task-list-details task-bg-3">
+                      	  <div class="task-details-content ">
+                      	  	 <h5>Buy Water</h5>
+                      	  	 <p>i want to the buy water</p> 
+                      	  </div>
+                      	  <div class="task-date">
+                      	  	 <p>20-09-2024</p>
+                      	  	 <p class="m-0">done</p>
+                      	  </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- jquery -->
+      <!-- <script type="assets/js/jquery/jquery.js"></script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <!-- calendar js -->
+      <script src="assets/js/calender/calender1.js"></script>
+      <script src="assets/js/calender/calender2.js"></script>
+      <!-- chart -->
+      <script src="assets/js/chart/apexcharts.js"></script>
+      <!-- main js -->
+      <script src="assets/js/main.js"></script>
+      
+      
+   </body>
+</html>
