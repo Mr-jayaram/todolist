@@ -68,8 +68,8 @@ h6{
     font-weight: 800;
 }
 .task-chart-data,.task-info-data{
-/*    max-height: 300px;*/
-/*    overflow-y: auto;*/
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 .task-chart-data::-webkit-scrollbar{
@@ -89,7 +89,29 @@ h6{
 .create-task-list,.calander-content,.task-chart{
     margin-top: 15px;
 }
+h6{
+    font-weight: bolder;
+    font-size: 15px;
+}
+.task-list-details h5{
+    font-size: 14px;
+    font-weight: bolder;
+}
 
+.task-list-details p{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+}
+.task-list-details h5{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.task-list-details p{
+    font-size: 14px;
+    font-weight: normal;
 }
 
 .task-list-details{
